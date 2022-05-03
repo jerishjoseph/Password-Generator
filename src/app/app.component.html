@@ -1,0 +1,11 @@
+<div>
+  <label>Enter the length of password:</label><input type="number" [(ngModel)]="length"><br>
+  <input [(ngModel)]="alphabets" type="checkbox" name="alpha" />include alphabets<br>
+  <input [(ngModel)]="numbers" type="checkbox" name="number" />include numbers<br>
+  <input [(ngModel)]="special" type="checkbox" name="specialchar" />include special characters<br>
+  <button (click)="generatePassword()">Generate</button><br>
+</div>
+
+<div>
+  {{password}}
+</div>
